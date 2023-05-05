@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Positioning</title>
+    <style>
+      .container {
+        font-size: 10px;
+        border: 6px solid rgb(165, 159, 159);
+        height: 200vh;
+        /* width: 100vw; */
+        display: flex;
+        /* justify-content: start; */
+        /* align-items: center; */
+        /* flex-direction: column; */
+        /* justify-content: end; */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-wrap: wrap; */
+      }
+
+      .items {
+        font-size: 2rem;
+        height: 150px;
+        width: 150px;
+        background: blueviolet;
+        margin: 15px;
+        text-align: center;
+        line-height: 150px;
+      }
+
+      /* static relative absolute fixed sticky */
+
+      #item1 {
+        /* position: sticky;
+        top: 100px;
+        background-color: rgb(129, 104, 72); */
+      }
+
+      #item2 {
+        position: absolute;
+        top: 50;
+        left: 100px;
+        /* position: fixed;
+        right: 100px;
+        bottom: 100px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items" id="item1">1</div>
+      <div class="items" id="item2">2</div>
+      <div class="items" id="item3">3</div>
+      <div class="items" id="item4">4</div>
+      <div class="items" id="item5">5</div>
+    </div>
+  </body>
+</html>
