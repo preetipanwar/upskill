@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <script src="objects_arrays.js"></script> -->
+  </head>
+  <body style="background-color: rgb(184, 184, 184); font-size: 26px">
+    <h1>Movie 1</h1>
+    <p>Name: <span id="name"></span></p>
+    <p>Director: <span id="director"></span></p>
+    <p>Producer: <span id="producer">this</span></p>
+    <p>Actors: <span id="actors"></span></p>
+    <p>Release year: <span id="release_year"></span></p>
+
+    <script>
+      const movie1 = {
+        name: "lagaan",
+        director: "ashutosh",
+        producer: undefined,
+        actors: ["aamir", "gracy"],
+        release_year: "2001",
+      };
+
+      document.getElementById("name").innerText = movie1.name;
+      document.getElementById("director").innerText = movie1.director;
+
+      const producer = document.getElementById("producer");
+
+      // if statement
+      if (movie1.producer === undefined) {
+        producer.innerText = "The producer is unknown";
+      } else {
+        producer.innerText = movie1.producer;
+      }
+
+      document.getElementById("actors").innerText = movie1.actors;
+      document.getElementById("release_year").innerText = movie1.release_year;
+
+      const name = document.getElementById("name");
+    </script>
+  </body>
+</html>
