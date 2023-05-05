@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>practice1</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/practice1.css" />
+  </head>
+  <body class="gray">
+    <div id="container">
+      <div id="left">
+        <div class="flip-box">
+          <div class="flip-box-front">
+            <img
+              src="https://i.pinimg.com/originals/bd/af/27/bdaf274f7590b6b075457a693d4d8a6c.jpg"
+            />
+          </div>
+          <div class="flip-box-back">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+        </div>
+      </div>
+      <div id="right">
+        <p>1. change the image of the rock when button is pressed.</p>
+        <button onclick="changeImage()">change image on the left</button>
+
+        <p>2. change the background behind the rock</p>
+        <button onclick="changebackground()">
+          change bg-color behind rock
+        </button>
+
+        <p>3. change the color of all the questions</p>
+        <button onclick="changecolor()">
+          change color of all the questions
+        </button>
+
+        <p>4. flip the rock with press of the button</p>
+        <button onclick="flip()">flip the rock</button>
+
+        <p>5. Show/Hide the image on the left</p>
+        <button onclick="showhide()">show/hide the rock</button>
+      </div>
+    </div>
+
+    <script src="./js/practice1.js"></script>
+  </body>
+</html>

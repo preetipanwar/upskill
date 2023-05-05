@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/todo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <script src="js/todo.js"></script>
+  <body>
+    <div id="container">
+      <div id="list">
+        <!-- <form> -->
+        <div id="input-bar">
+          <input
+            type="text"
+            placeholder="Bring milk, bread, work on project ..."
+          />
+          <button onclick="addlist()"><i class="fa-solid fa-add"></i></button>
+        </div>
+
+        <div id="todo-items">
+          <p><i class="fa-solid fa-list-ol"></i> To-Do items</p>
+          <ul></ul>
+        </div>
+
+        <div id="todo-done">
+          <p><i class="fa-solid fa-check"></i> Done</p>
+          <ul>
+            <!-- <li><i class="fa-solid fa-circle-check"></i>Bread</li> -->
+          </ul>
+        </div>
+        <!-- </form> -->
+      </div>
+    </div>
+  </body>
+</html>

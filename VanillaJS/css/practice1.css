@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-size: 1.25rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body.green {
+  background-color: rgb(97, 191, 108);
+}
+
+body.gray {
+  background-color: #aaa;
+}
+
+#container {
+  display: flex;
+}
+
+#left,
+#right {
+  width: 50vw;
+  height: 100vh;
+}
+
+#left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+#right {
+  background: rgb(221, 210, 210);
+  padding: 100px;
+}
+
+.flip-box {
+  width: 300px;
+  height: 380px;
+  position: relative;
+  transform: perspective(1000px) rotateY(0);
+  transform-style: preserve-3d;
+  transition: 0.6s;
+}
+
+.flip-box:hover,
+.click {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front img {
+  width: 100%;
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 150px;
+}
+
+.flip-box-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  background-color: rgb(255, 247, 232);
+}
+
+.flip-box-back i {
+  color: rgb(97, 191, 108);
+  font-size: 2rem;
+}
+
+button {
+  padding: 8px 20px;
+  font-size: 1rem;
+}

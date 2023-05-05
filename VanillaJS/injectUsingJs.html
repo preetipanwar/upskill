@@ -1,0 +1,38 @@
+<!-- Javascript string literal -->
+
+<html>
+  <head>
+    <script src="js/movies.js"></script>
+    <style>
+      body {
+        background-color: bisque;
+        font-size: large;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      #movies {
+        background-color: white;
+        width: 250px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 10px yellowgreen;
+        margin: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="movies"></div>
+    <script>
+      const m1 = `
+                    <div class="movie">
+                      <img src="${movie1.imgUrl}" width="250px" />
+                      <p>Name: <i id="name1">${movie1.name}</i></p>
+                      <p>Director: <i id="director1">${movie1.director}</i></p>
+                      <p>Producer: <i id="producer1">${movie1.producer}</i></p>
+                      <p>Released: <i id="released1">${movie1.released}</i></p>
+                    </div>
+      `;
+      document.getElementById("movies").innerHTML = m1;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>practice3</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/practice4.css" />
+    <script src="./js/practice4.js"></script>
+  </head>
+  <body class="gray">
+    <div id="container">
+      <div class="left">
+        firstElement
+        <div class="text-item">
+          <div class="heading">
+            <h4>Stock Alerts</h4>
+            <button onclick="expand()">+</button>
+          </div>
+          <p>
+            Configure notifications and get notified so that you don't miss a
+            move.
+          </p>
+        </div>
+        lastElement
+      </div>
+
+      <div id="right">
+        <p>
+          1. on click of the + button on left, the pane should expand (use
+          .expand class to make it expand)
+        </p>
+        <hr />
+
+        <p>2. replace + to - when the pane is in expanded state</p>
+        <hr />
+
+        <p>
+          3. make copy of .text-item (that blue pane on left) and add it below
+          the previous one
+        </p>
+        <button onclick="copytextitem()">make copy by clicking me</button>
+        <hr />
+
+        <p>4. change bg color of .text-item by clicking button below</p>
+        <button onclick="changebgcolor()">change bg</button>
+        <hr />
+
+        <p>5. remove .text-item by the delete button</p>
+        <button onclick="removetextitem()">remove .text-item</button>
+        <hr />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+html {
+  font-size: 1rem;
+}
+
+body {
+  background-color: bisque;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+#list {
+  width: 30rem;
+  /* background: #e6e3e3; */
+  margin: 100px auto;
+  text-align: center;
+}
+
+#list #input-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#list #input-bar input,
+#list #input-bar button {
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: 5px solid #a6a62d;
+  font-size: 1.1rem;
+}
+
+#list #input-bar input {
+  padding-left: 30px;
+  color: #5e540f;
+  background-color: #faeea3;
+  flex-grow: 1;
+}
+
+#list #input-bar button {
+  background-color: #a6a62d;
+  width: 5rem;
+  margin-left: 0.5rem;
+}
+
+#list #input-bar button:hover {
+  background-color: #65650a;
+  border: 5px solid #65650a;
+  color: white;
+}
+
+#todo-items,
+#todo-done {
+  margin-top: 80px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+ul {
+  margin-top: 1rem;
+  list-style: none;
+  color: #342d06;
+  font-size: 1.2rem;
+}
+
+#todo-items {
+}
+
+#todo-items ul li {
+  display: flex;
+}
+
+#todo-done ul {
+  text-decoration: line-through;
+}
+
+#todo-done ul button {
+  display: none;
+}
+
+p {
+  font-style: italic;
+  font-weight: 800;
+  color: rgb(3, 79, 3);
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  background-color: rgba(67, 49, 3, 0.3);
+  padding: 6px 12px;
+  border-radius: 20px;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+ul li i {
+  margin-right: 1.25rem;
+}
+
+.btn-check,
+.btn-delete {
+  background-color: white;
+}
+
+.btn-check {
+}
+
+.btn-delete {
+}

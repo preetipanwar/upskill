@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>EventListening</title>
+    <style>
+      h4 {
+        height: 100px;
+        width: 250px;
+        background: rgb(78, 78, 174);
+        color: white;
+        text-align: center;
+        line-height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hide para</h1>
+    <p id="p">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi deserunt
+      omnis necessitatibus quasi soluta aperiam ipsam sit, sed quos adipisci
+      voluptas cum! Cumque esse laborum fugiat provident natus libero ullam?
+    </p>
+    <button onclick="toggleHide()">Hide/Show</button>
+    <button onclick="toggleColor()">Change color</button>
+    <br /><br />
+    <h4>Move mouse over me</h4>
+
+    <script>
+      // change body bg color using JS
+      let body = document.querySelector("body");
+      body.style.background = "#AAA";
+
+      let h4 = document.querySelector("h4");
+      let p = document.querySelector("p");
+
+      p.style.display = "block";
+      p.style.color = "black";
+
+      h4.addEventListener("mouseover", () => (h4.innerText = "mouse inside"));
+      h4.addEventListener("mouseout", () => (h4.innerText = "mouse outside"));
+
+      window.addEventListener("resize", function () {
+        h4.innerText = window.innerWidth;
+      });
+
+      function toggleHide() {
+        if (p.style.display == "block") {
+          p.style.display = "none";
+        } else {
+          p.style.display = "block";
+        }
+      }
+
+      function toggleColor() {
+        if (p.style.color == "black") {
+          p.style.color = "white";
+        } else {
+          p.style.color = "black";
+        }
+      }
+    </script>
+  </body>
+</html>

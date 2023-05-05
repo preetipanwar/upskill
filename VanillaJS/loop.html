@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: bisque;
+        padding: 100px;
+      }
+      #boxes {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .box {
+        background-color: rgb(55, 54, 54);
+        color: white;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        margin: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="boxes"></div>
+    <script>
+      let allBoxes = "";
+
+      for (let x = 1; x <= 100; x++) {
+        let box = `<div class="box">${x}</div>`;
+        allBoxes = allBoxes + box;
+      }
+      document.getElementById("boxes").innerHTML = allBoxes;
+    </script>
+  </body>
+</html>

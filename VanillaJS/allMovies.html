@@ -1,0 +1,73 @@
+<!-- 
+    1. arrays
+    2. for loop
+    3. .length
+ -->
+<html>
+  <head>
+    <script src="js/listofmovies.js"></script>
+    <style>
+      body {
+        background-color: bisque;
+        font-size: large;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: white;
+      }
+      .movie {
+        background-color: rgb(11, 45, 74);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 4px yellowgreen;
+        margin: 25px;
+        width: 200px;
+      }
+
+      img {
+        width: 200px;
+        border-radius: 6px;
+      }
+
+      #movies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Navbar</header>
+    <div id="movies"></div>
+    <script>
+      let addAllMovies = "";
+
+      listofmovies.map(function (value, index) {
+        let movie = `
+              <div class="movie">
+                  <img src="${value.imgUrl}"  />
+                  <p>Name: <i id="name1">${value.name}</i></p>
+                  <p>Director: <i id="director1">${value.director}</i></p>
+                  <p>Producer: <i id="producer1">${value.producer}</i></p>
+                  <p>Released: <i id="released1">${value.released}</i></p>
+              </div>
+          `;
+        addAllMovies = addAllMovies + movie;
+      });
+
+      //   for (let x = 0; x < listofmovies.length; x++) {
+      //   let movie = `
+      //       <div class="movie">
+      //           <img src="${listofmovies[x].imgUrl}" width="250px" />
+      //           <p>Name: <i id="name1">${listofmovies[x].name}</i></p>
+      //           <p>Director: <i id="director1">${listofmovies[x].director}</i></p>
+      //           <p>Producer: <i id="producer1">${listofmovies[x].producer}</i></p>
+      //           <p>Released: <i id="released1">${listofmovies[x].released}</i></p>
+      //       </div>
+      //   `;
+      //     addAllMovies = addAllMovies + movie;
+      //   }
+      //   insert all the movies to our #movies div
+      document.getElementById("movies").innerHTML = addAllMovies;
+    </script>
+  </body>
+</html>

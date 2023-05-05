@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-size: 1.25rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#container {
+  display: flex;
+}
+
+.left,
+#right {
+  width: 50vw;
+  height: 100vh;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  color: rgb(63, 41, 9);
+  background: rgb(179, 183, 178);
+}
+
+#right {
+  background: rgb(221, 210, 210);
+  padding: 0 80px;
+}
+
+#right button {
+  padding: 9px 20px;
+  font-size: 1rem;
+  margin: 0px 25px;
+}
+
+input {
+  height: 40px;
+  width: 80%;
+  padding: 20px 20px;
+  color: rgb(107, 78, 35);
+}
+
+.text-item {
+  width: 250px;
+  height: 80px;
+  padding: 5px 25px;
+  background-color: #7d7bf2;
+  color: #eaeafa;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #a2a2df;
+  margin: 5px 0;
+}
+
+.expand {
+  height: 200px;
+}
+
+.text-item .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.text-item button {
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  border: none;
+  font-size: 25px;
+}
+
+.text-item p {
+  margin: 30px 0;
+}
+.pink {
+  background-color: palevioletred;
+}
+.purple {
+  background-color: #9665f1f8;
+}
+button {
+  border-style: outset;
+}

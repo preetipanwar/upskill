@@ -1,0 +1,42 @@
+<!-- 1. how to make an Js object
+     2. how to read and use a javascript object 
+-->
+
+<html>
+  <head>
+    <script src="js/movies.js"></script>
+    <style>
+      body {
+        background-color: bisque;
+        font-size: large;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      #movies {
+        background-color: white;
+        width: 250px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 10px yellowgreen;
+        margin: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="movies">
+      <div id="movie1">
+        <img src="" width="250px" />
+        <p>Name: <i id="name1">naamnaam</i></p>
+        <p>Director: <i id="director1">naamnaam</i></p>
+        <p>Producer: <i id="producer1">naamnaam</i></p>
+        <p>Released: <i id="released1">naamnaam</i></p>
+      </div>
+    </div>
+    <script>
+      document.getElementById("name1").innerText = movie1.name;
+      document.getElementById("director1").innerText = movie1.director;
+      document.getElementById("producer1").innerText = movie1.producer;
+      document.getElementById("released1").innerText = movie1.released;
+    </script>
+  </body>
+</html>

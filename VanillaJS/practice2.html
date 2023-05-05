@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>practice2</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/practice2.css" />
+  </head>
+  <body class="gray">
+    <div id="container">
+      <div class="left">
+        <div class="shape square">.shape</div>
+        <hr />
+        <!-- add input values in li -->
+        <ul>
+          <li>This is a placeholder li 1</li>
+        </ul>
+      </div>
+      <div id="right">
+        <p>1. hide the .shape</p>
+        <button onclick="hide()">hide</button>
+        <hr />
+
+        <p>2. change the .shape to circle using .circle class</p>
+        <button onclick="changeshape()">change shape</button>
+        <hr />
+
+        <p>3. change .shape to rectangle using .rectangle</p>
+        <button onclick="changetorectangle()">change shape</button>
+        <hr />
+
+        <p>4. change the bg-color of the #left div</p>
+        <button onclick="changebgcolor()">change bg</button>
+        <hr />
+
+        <p>5. change the color of the li tags</p>
+        <button onclick="changecolor()">change color</button>
+        <hr />
+
+        <p>
+          6.add text in li
+          <input type="text" placeholder="Add <li> tags with text <li>" />
+        </p>
+        <button onclick="addListItem()">+ add text in li</button>
+        <button onclick="addNewListItem()">+ add new li</button>
+        <hr />
+      </div>
+    </div>
+
+    <script src="./js/practice2.js"></script>
+  </body>
+</html>
