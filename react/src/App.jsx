@@ -9,6 +9,7 @@ export default function App() {
       <div className="container">
         <State />
         <RespondingToEvents buttonName = "do it" />
+        {/* add your todo component here - preeti */}
         <Cards />
         <Card />
       </div>
