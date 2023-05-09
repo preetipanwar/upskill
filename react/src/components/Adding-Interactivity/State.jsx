@@ -1,7 +1,9 @@
-import { useState } from 'react';
-import { sculptureList } from '../data';
+// state - a components memory
 
-export default function Gallery() {
+import { useState } from 'react';
+import { sculptureList } from '../../data';
+
+export default function State() {
   const [index, setIndex] = useState(0);
   const [showHide, setShowHide] = useState(true);
   let sculpture = sculptureList[index];

@@ -1,3 +1,5 @@
+// state - components memory
+
 import { useState } from 'react';
 import { sculptureList } from '../data';
 

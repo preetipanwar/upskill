@@ -33,6 +33,17 @@ h1 {
   line-height: 1.1;
 }
 
+input {
+  height: 2rem;
+  border-radius: 0.5rem;
+  background-color: #7378df;
+  padding: 0.5rem;
+}
+
+input::placeholder{
+  color: white;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
