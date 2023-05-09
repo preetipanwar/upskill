@@ -1,7 +1,7 @@
 // state - a components memory
 
 import { useState } from 'react';
-import { sculptureList } from '../../data';
+import { sculptureList } from '../../data/sculpture';
 
 export default function State() {
   const [index, setIndex] = useState(0);

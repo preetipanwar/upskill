@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { sculptureList } from '../data';
+import { sculptureList } from '../../data/sculpture';
 
 export default function Card2() {
   const [hide, setHide] = useState(true);
