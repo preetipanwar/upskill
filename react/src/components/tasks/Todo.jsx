@@ -3,9 +3,9 @@ import todolist from "../../data/todoList"
 export default function TodoList(){
     return (
         <>
-           { todolist.map(function(todo){
-                return <Todo name={todo.name} items = {todo.items} />
-           }) }
+            <Todo name={todolist[0].name} items = {todolist[0].items} />
+            <Todo name={todolist[1].name} items = {todolist[1].items} />
+            <Todo name={todolist[2].name} items = {todolist[2].items} />
         </>
     )
 }
