@@ -47,5 +47,4 @@ result = numbers.indexOf(7)
 // returns Boolean
 result = numbers.includes(7)
 
-
 console.log(result)

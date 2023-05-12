@@ -1,0 +1,62 @@
+main {
+  font-family: Geneva, Verdana, sans-serif;
+  background-image: url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png');
+}
+
+header ul {
+  display: flex;
+  justify-content: end;
+  margin: 0;
+}
+
+header ul li {
+  margin-left: 40px;
+  list-style-type: none;
+  padding: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+}
+
+img {
+  width: 300px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 130px;
+}
+
+h1 {
+  font-size: 34px;
+  padding: 16px;
+  color: white;
+}
+
+.searchBar {
+  width: 750px;
+  border-radius: 8px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.locationInput,
+.searchInput {
+  padding: 20px 25px;
+  height: 100%;
+  border: none;
+}
+
+.locationInput {
+  width: 30%;
+}
+
+.searchInput {
+  width: 55%;
+}
