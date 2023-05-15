@@ -18,12 +18,8 @@ header ul li {
 header ul li a {
   text-decoration: none;
   color: white;
-  font-size: larger;
+  font-size: medium;
   font-weight: bold;
-}
-
-img {
-  width: 300px;
 }
 
 .section {
@@ -59,4 +55,33 @@ h1 {
 
 .searchInput {
   width: 55%;
+}
+
+.cards {
+  background-color: antiquewhite;
+  height: 270px;
+  width: 380px;
+  border-radius: 15px;
+  margin: 50px;
+  overflow: hidden;
+}
+
+h5 {
+  font-weight: 400;
+  /* background-color: aqua; */
+  margin: 0%;
+  padding: 6px;
+}
+p {
+  font-weight: 300;
+  font-size: large;
+  /* background-color: aquamarine; */
+  margin: 0%;
+  padding: 6px;
+  margin-left: 3px;
+}
+
+img {
+  width: 380px;
+  height: 180px;
 }
