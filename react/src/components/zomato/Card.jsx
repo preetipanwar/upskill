@@ -1,15 +1,12 @@
-export default function Card() {
+export default function Card({ url, tagLine, description }) {
   return (
     <div className="cards">
       <div className="imgwrapper">
-        <img
-          src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
-          alt=""
-        />
+        <img src={url} alt="" />
       </div>
       <div className="card-text">
-        <h5>Order Online</h5>
-        <p>Stay home and order to your doorstep</p>
+        <h5>{tagLine}</h5>
+        <p>{description}</p>
       </div>
     </div>
   );
