@@ -2,6 +2,7 @@ export default function Search() {
   return (
     <div className="section">
       <img
+        className="logo"
         src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png"
         alt=""
       />

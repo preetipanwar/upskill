@@ -6,7 +6,11 @@ export default function Zomato() {
   return (
     <>
       <Main />
-      <Card />
+      <div className="cardwrapper">
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </>
   );
 }

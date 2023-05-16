@@ -26,12 +26,12 @@ header ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 130px;
+  padding: 60px 0px 140px 0px;
 }
 
 h1 {
   font-size: 34px;
-  padding: 16px;
+  /* padding: 16px; */
   color: white;
 }
 
@@ -57,31 +57,51 @@ h1 {
   width: 55%;
 }
 
-.cards {
-  background-color: antiquewhite;
-  height: 270px;
-  width: 380px;
-  border-radius: 15px;
-  margin: 50px;
-  overflow: hidden;
+.cardwrapper {
+  display: flex;
+  /* background-color: aqua; */
+  padding: 30px 80px;
 }
 
+.cards {
+  background-color: white;
+  /* height: 220px; */
+  width: 420px;
+  border-radius: 15px;
+  margin: 15px;
+  overflow: hidden;
+  border: 1px solid gray;
+}
+
+.card-text {
+  padding: 10px 20px;
+  line-height: 30px;
+}
 h5 {
   font-weight: 400;
   /* background-color: aqua; */
   margin: 0%;
-  padding: 6px;
 }
 p {
   font-weight: 300;
   font-size: large;
   /* background-color: aquamarine; */
   margin: 0%;
-  padding: 6px;
-  margin-left: 3px;
+  /* padding: 6px;
+  margin-left: 3px; */
 }
 
-img {
-  width: 380px;
-  height: 180px;
+.imgwrapper {
+  background-color: aqua;
+  height: 140px;
+  overflow: hidden;
+}
+
+.cards img {
+  width: 100%;
+  offset-position: initial;
+}
+
+.logo {
+  height: 60px;
 }
