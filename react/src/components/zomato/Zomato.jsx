@@ -1,4 +1,5 @@
 import Card from './Card';
+import Collections from './Collections';
 import Main from './Main';
 import './zomato.css';
 
@@ -35,6 +36,7 @@ export default function Zomato() {
           );
         })}
       </div>
+      <Collections />
     </>
   );
 }

@@ -105,3 +105,10 @@ p {
 .logo {
   height: 60px;
 }
+
+.collection {
+  background-color: aquamarine;
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+}
