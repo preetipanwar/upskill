@@ -1,4 +1,6 @@
+import { collections, cardData } from '../../data/zomato';
 import Card from './Card';
+import Collectioncard from './Collectioncard';
 import Collections from './Collections';
 import Main from './Main';
 import './zomato.css';

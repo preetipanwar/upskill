@@ -1,7 +1,10 @@
-export default function Collectioncard() {
+export default function Collectioncard({ heading, places }) {
   return (
-    <div>
-      <p>18 Thrilling Live Cricket</p>
+    <div className="collectioncard">
+      <div className="block">
+        <p>{heading}</p>
+        <p>{places}</p>
+      </div>
     </div>
   );
 }

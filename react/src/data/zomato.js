@@ -43,5 +43,4 @@ const collections = [
   },
 ];
 
-module.exports.cardData = cardData;
-module.exports.collections = collections;
+export { cardData, collections };
