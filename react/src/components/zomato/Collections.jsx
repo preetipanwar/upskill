@@ -35,6 +35,7 @@ export default function Collections() {
         {collections.map(function (collection) {
           return (
             <Collectioncard
+              url={collection.url}
               heading={collection.heading}
               places={collection.places}
             />

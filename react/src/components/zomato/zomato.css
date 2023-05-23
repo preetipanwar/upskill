@@ -59,7 +59,6 @@ h1 {
 
 .cardwrapper {
   display: flex;
-  /* background-color: aqua; */
   padding: 30px 80px;
 }
 
@@ -138,20 +137,24 @@ h6 {
 
 .collectioncard {
   color: aliceblue;
-  background-image: url(https://pythonevents.io/wp-content/uploads/Stadium-Ticketing-System-1300x867.jpg);
-  background-size: cover;
   width: 280px;
   height: 330px;
   border-radius: 6px;
   margin-top: 40px;
-  /* background-clor: blueviolet; */
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .block {
   font-size: 20px;
-  margin-top: 280px;
-  /* background-color: #904545; */
+  position: absolute;
+  bottom: 0;
+  padding: 30px 20px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), black);
 }
+
 .tag p {
   /* background-color: antiquewhite; */
   font-size: 40px;
