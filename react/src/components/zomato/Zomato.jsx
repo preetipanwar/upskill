@@ -1,4 +1,5 @@
 import { collections, cardData } from '../../data/zomato';
+import Block from './Block';
 import Card from './Card';
 import Collectioncard from './Collectioncard';
 import Collections from './Collections';
@@ -39,6 +40,7 @@ export default function Zomato() {
         })}
       </div>
       <Collections />
+      <Block />
     </>
   );
 }

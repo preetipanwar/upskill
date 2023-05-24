@@ -36,15 +36,11 @@ export default function Collections() {
           return (
             <Collectioncard
               url={collection.url}
-              heading={collection.heading}
+              heading={`${collection.heading.substring(0, 30)}...`}
               places={collection.places}
             />
           );
         })}
-      </div>
-
-      <div className="tag">
-        <p>Popular localities in and around Delhi NCR</p>
       </div>
     </div>
   );

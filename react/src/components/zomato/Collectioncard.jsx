@@ -6,7 +6,7 @@ export default function Collectioncard({ url, heading, places }) {
         backgroundImage: `url(${url})`,
       }}
     >
-      <div className="block">
+      <div className="collectioncardheading">
         <p>{heading}</p>
         <p>{places}</p>
       </div>
