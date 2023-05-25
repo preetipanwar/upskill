@@ -47,4 +47,43 @@ const collections = [
   },
 ];
 
-export { cardData, collections };
+const block = [
+  {
+    heading: 'Connaught Place',
+    places: '254 Places',
+  },
+  {
+    heading: 'Sector 29',
+    places: '145 Places',
+  },
+  {
+    heading: 'Sector 19, Noida',
+    places: '204 Places',
+  },
+  {
+    heading: 'Rajouri Garden',
+    places: '298 Places',
+  },
+  {
+    heading: 'Saket',
+    places: '312 Places',
+  },
+  {
+    heading: 'DLF Cyber City',
+    places: '158 Places',
+  },
+  {
+    heading: 'Golf Course Road',
+    places: '155 Places',
+  },
+  {
+    heading: 'DLF Phase 4',
+    places: '220 Places',
+  },
+  {
+    heading: 'See more',
+    places: '158 Places',
+  },
+];
+
+export { cardData, collections, block };

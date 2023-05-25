@@ -155,21 +155,38 @@ h6 {
   background: linear-gradient(rgba(0, 0, 0, 0), black);
 }
 
+.block {
+  /* background-color: violet; */
+  padding: 20px 80px;
+  margin-top: 100px;
+}
 .tag {
-  background-color: antiquewhite;
   font-size: 40px;
   font-weight: 350;
-  /* padding: 80px; */
-}
-
-.block {
-  background-color: violet;
-  padding: 80px;
 }
 .smallblock {
-  background-color: #db6060;
-  width: 300px;
-  height: 80px;
+  background-color: rgb(244, 244, 244);
+  width: 350px;
+  padding: 20px;
   border-style: groove;
   border-radius: 10px;
+  /* text-align: left; */
+  display: flex;
+}
+
+.box1 {
+  /* background-color: aqua; */
+  flex-grow: 1;
+}
+
+.smallblock:hover {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+.multipleblock {
+  /* background-color: blueviolet; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  justify-content: space-between;
+  padding: 30px 0px;
 }
