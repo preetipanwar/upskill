@@ -1,0 +1,21 @@
+.banner {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  align-items: center;
+  background-image: url(https://thumbs.dreamstime.com/z/bright-decorative-cosmetics-pink-nail-polish-lipstick-pink-background-top-view-bright-decorative-cosmetics-pink-nail-polish-104865506.jpg);
+  background-size: cover;
+}
+.leftbanner {
+  margin-left: 70px;
+}
+.leftbanner:hover {
+  color: rgb(204, 19, 96);
+}
+
+.rightbanner a {
+  /* background-color: rgba(30, 30, 109, 0.551); */
+  padding: 0px 40px;
+  color: black;
+}
