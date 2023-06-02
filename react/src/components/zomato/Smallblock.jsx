@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function Smallblock({ heading, places }) {
   return (
@@ -9,7 +9,7 @@ export default function Smallblock({ heading, places }) {
         <p>{places}</p>
       </div>
       <div className="box2">
-        <FontAwesomeIcon icon={faAngleRight} />
+        {/* <FontAwesomeIcon icon={faAngleRight} /> */}
       </div>
     </div>
   );
