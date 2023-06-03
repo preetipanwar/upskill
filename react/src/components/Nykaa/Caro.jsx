@@ -23,17 +23,16 @@ export default function Caro() {
     },
   };
   return (
-    <>
-      <Carousel
-        responsive={responsive}
-        itemClass="carouselItem"
-        partialVisible={false}
-      >
+    <div className="caro">
+      <Carousel responsive={responsive} itemClass="carouselItem">
+        <Scrollbar />
+        <Scrollbar />
+        <Scrollbar />
         <Scrollbar />
         <Scrollbar />
         <Scrollbar />
         <Scrollbar />
       </Carousel>
-    </>
+    </div>
   );
 }

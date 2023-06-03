@@ -186,6 +186,7 @@ body {
   height: 60px;
   display: flex;
   align-items: center;
+  padding: 0px 50px;
 }
 .beauty p {
   font-size: 26px;
@@ -233,5 +234,9 @@ body {
 }
 
 .carouselItem {
-  margin-right: 50px;
+  margin-right: 100px;
+}
+
+.caro {
+  padding: 0 50px;
 }

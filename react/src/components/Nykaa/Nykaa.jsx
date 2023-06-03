@@ -7,12 +7,13 @@ import Scrollbar from './Scrollbar';
 import './nykaa.css';
 import Wrapper from './Wrapper';
 import Caro from './Caro';
+import Beauty from './Beauty';
 
 export default function Nykaa() {
   return (
     <div>
       <Header />
-      <Wrapper />
+      <Beauty />
       <Caro />
     </div>
   );
