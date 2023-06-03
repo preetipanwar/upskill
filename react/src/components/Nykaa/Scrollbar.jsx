@@ -1,6 +1,6 @@
 export default function Scrollbar() {
   return (
-    <div className="scrollbar">
+    <div className="scrollbar carouselItem">
       <div className="scrollbaroffer">
         <div className="megaoffer">
           <h4 className="offer1">Up To 30% off</h4>

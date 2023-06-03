@@ -146,7 +146,7 @@ body {
   position: relative;
   background-image: url(https://images-static.nykaa.com/uploads/af92e6a0-73bf-4fe7-b528-a96cdf909002.jpg?tr=w-1200,cm-pad_resize);
   background-size: cover;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 .scrollbaroffer {
   /* background-color: peachpuff; */
@@ -178,8 +178,9 @@ body {
 .button button {
   background-color: rgb(204, 19, 96);
   border: none;
-  border-radius: 3px;
-  height: 40px;
+  border-radius: 6px;
+  height: 60px;
+  width: 50px;
 }
 .beauty {
   height: 60px;
@@ -194,12 +195,23 @@ body {
   padding: 10px 50px;
   position: relative;
   overflow-x: scroll;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 .slidebar {
   /* background-color: brown; */
   display: flex;
   width: max-content;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.wrapper {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .prev-btn,
@@ -213,9 +225,13 @@ body {
   height: 60px;
   width: 60px;
   border-radius: 60px;
-  background-color: rgb(118, 118, 118);
+  /* background-color: rgb(118, 118, 118); */
   z-index: 1;
 }
 .next-btn {
   right: 40px;
+}
+
+.carouselItem {
+  margin-right: 50px;
 }
