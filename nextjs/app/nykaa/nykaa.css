@@ -1,0 +1,242 @@
+body {
+  background-color: rgb(133, 133, 133);
+}
+
+.banner {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 40px;
+  align-items: center;
+  background-image: url(https://thumbs.dreamstime.com/z/bright-decorative-cosmetics-pink-nail-polish-lipstick-pink-background-top-view-bright-decorative-cosmetics-pink-nail-polish-104865506.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+.leftbanner {
+  margin-left: 70px;
+}
+.leftbanner:hover {
+  color: rgb(204, 19, 96);
+}
+.leftbanner p {
+  animation-name: text;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  position: relative;
+  font-weight: 400;
+}
+@keyframes text {
+  0% {
+    top: 50px;
+  }
+  30% {
+    top: 50px;
+  }
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.rightbanner {
+  /* background-color: rgba(30, 30, 109, 0.551); */
+}
+
+.rightbanner a {
+  /* background-color: rgba(30, 30, 109, 0.551); */
+  padding: 0px 3px;
+  margin-right: 15px;
+  color: black;
+  font-size: medium;
+  border-right: 2px solid black;
+}
+.rightbanner a:hover {
+  color: rgb(204, 19, 96);
+}
+.category {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+}
+.category img {
+  width: 80px;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  /* background-color: aquamarine; */
+}
+.list li {
+  line-height: 70px;
+  margin-right: 50px;
+  /* background-color: aqua; */
+}
+.list a {
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
+  /* background-color: palevioletred; */
+}
+.list a:hover {
+  color: rgb(204, 19, 96);
+}
+
+.searchbar input {
+  background-color: rgb(235, 232, 232);
+  height: 40px;
+  width: 230px;
+  border-radius: 5px;
+  border-style: none;
+}
+::placeholder {
+  padding: 30px;
+}
+.searchbar button {
+  margin: 20px;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgb(204, 19, 96);
+  color: white;
+}
+.menu {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid rgb(210, 210, 210);
+  box-shadow: 0px 5px 10px 0px rgb(220, 220, 220);
+}
+.menubar {
+  /* background-color: royalblue; */
+  display: flex;
+  list-style: none;
+  margin: 0%;
+  line-height: 45px;
+}
+.menubar li {
+  margin-right: 40px;
+}
+.menubar li:hover {
+  border-bottom: 3px solid rgb(204, 19, 96);
+}
+.menubar a {
+  color: rgb(103, 99, 99);
+  font-size: 15px;
+  font-weight: 350;
+}
+.menubar a:hover {
+  color: rgb(204, 19, 96);
+}
+.offer a img {
+  width: 100px;
+}
+.scrollbar {
+  /* background-color: pink; */
+  width: 500px;
+  height: 270px;
+  border-radius: 8px;
+  position: relative;
+  background-image: url(https://images-static.nykaa.com/uploads/af92e6a0-73bf-4fe7-b528-a96cdf909002.jpg?tr=w-1200,cm-pad_resize);
+  background-size: cover;
+  margin-right: 40px;
+}
+.scrollbaroffer {
+  /* background-color: peachpuff; */
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+.megaoffer {
+  /* background-color: rgb(106, 65, 51); */
+  height: 100%;
+  line-height: 0%;
+  color: white;
+  padding: 0px 20px;
+}
+.offer1 {
+  font-weight: 500;
+  /* background-color: aquamarine; */
+}
+.offer2 {
+  font-size: 20px;
+}
+.button {
+  padding-right: 20px;
+}
+.button button {
+  background-color: rgb(204, 19, 96);
+  border: none;
+  border-radius: 6px;
+  height: 60px;
+  width: 50px;
+}
+.beauty {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+}
+.beauty p {
+  font-size: 26px;
+  font-weight: 350;
+}
+.wrapper {
+  padding: 10px 50px;
+  position: relative;
+  overflow-x: scroll;
+  /* background-color: aquamarine; */
+}
+.slidebar {
+  /* background-color: brown; */
+  display: flex;
+  width: max-content;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.wrapper {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.prev-btn,
+.next-btn {
+  border-style: hidden;
+  position: absolute;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  /* background-color: rgb(118, 118, 118); */
+  z-index: 1;
+}
+.next-btn {
+  right: 40px;
+}
+
+.carouselItem {
+  margin-right: 100px;
+}
+
+.caro {
+  padding: 0 50px;
+}
