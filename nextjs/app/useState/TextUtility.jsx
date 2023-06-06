@@ -4,14 +4,14 @@ import React, { useState } from 'react';
 // use state tutorial
 
 export default function TextUtility() {
-  //   function useMe(string) {
-  //     function setString() {
-  //      string = string + 1;
-  //     }
-  //     return [string, setString];
-  //   }
+  function useMe(string) {
+    function setString() {
+      string = string + 1;
+    }
+    return [string, setString];
+  }
 
-  //   const [string, setString] = useMe('hello world');
+  const [string, setString] = useMe('hello world');
 
   const [textArea, setTextArea] = useState('');
 
